@@ -7142,7 +7142,7 @@ static bool setting_append_list_input_player_options(
       static char split_joycon[MAX_USERS][64];
       static char split_joycon_lbl[MAX_USERS][64];
       static char key_bind_defaults[MAX_USERS][64];
-      static char mouse_index[MAX_USERS][64];
+      static char mouse_keyboard_index[MAX_USERS][64];
 
       static char label[MAX_USERS][64];
       static char label_type[MAX_USERS][64];
@@ -7150,7 +7150,7 @@ static bool setting_append_list_input_player_options(
       static char label_bind_all[MAX_USERS][64];
       static char label_bind_all_save_autoconfig[MAX_USERS][64];
       static char label_bind_defaults[MAX_USERS][64];
-      static char label_mouse_index[MAX_USERS][64];
+      static char label_mouse_keyboard_index[MAX_USERS][64];
 
       tmp_string[0] = '\0';
 
@@ -7176,8 +7176,8 @@ static bool setting_append_list_input_player_options(
       fill_pathname_join_delim(key_bind_defaults[user],
             tmp_string, "bind_defaults", '_',
             sizeof(key_bind_defaults[user]));
-      fill_pathname_join_delim(mouse_index[user], tmp_string, "mouse_index", '_',
-            sizeof(mouse_index[user]));
+      fill_pathname_join_delim(mouse_keyboard_index[user], tmp_string, "mouse_index", '_',
+            sizeof(mouse_keyboard_index[user]));
 
       snprintf(split_joycon_lbl[user], sizeof(label[user]),
                "%s %u", msg_hash_to_str(MENU_ENUM_LABEL_VALUE_INPUT_SPLIT_JOYCON), user + 1);
@@ -7200,7 +7200,7 @@ static bool setting_append_list_input_player_options(
       snprintf(label_bind_all_save_autoconfig[user], sizeof(label_bind_all_save_autoconfig[user]),
                "%s",
                msg_hash_to_str(MENU_ENUM_LABEL_VALUE_INPUT_SAVE_AUTOCONFIG));
-      snprintf(label_mouse_index[user], sizeof(label_mouse_index[user]),
+      snprintf(label_mouse_keyboard_index[user], sizeof(label_mouse_keyboard_index[user]),
                "%s",
                msg_hash_to_str(MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_KEYBOARD_INDEX));
 
@@ -7331,8 +7331,8 @@ static bool setting_append_list_input_player_options(
       CONFIG_UINT_ALT(
             list, list_info,
             &settings->uints.input_mouse_keyboard_index[user],
-            mouse_index[user],
-            label_mouse_index[user],
+            mouse_keyboard_index[user],
+            label_mouse_keyboard_index[user],
             0,
             &group_info,
             &subgroup_info,
