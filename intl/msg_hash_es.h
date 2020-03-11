@@ -1219,8 +1219,8 @@ MSG_HASH(
     "Tipo de dispositivo"
     )
 MSG_HASH(
-    MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_INDEX,
-    "Índice de ratón"
+    MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_KEYBOARD_INDEX,
+    "Índice de ratón" /* TODO/FIXME: needs new translation of "Mouse/Keyboard Index" */
     )
 MSG_HASH(
     MENU_ENUM_LABEL_VALUE_INPUT_DRIVER,

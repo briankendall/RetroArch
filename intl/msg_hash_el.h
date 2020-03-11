@@ -981,8 +981,8 @@ MSG_HASH(
     "Τύπος Συσκευής"
     )
 MSG_HASH(
-    MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_INDEX,
-    "Κατάλογος Ποντικιού"
+    MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_KEYBOARD_INDEX,
+    "Κατάλογος Ποντικιού" /* TODO/FIXME: needs new translation of "Mouse/Keyboard Index" */
     )
 MSG_HASH(
     MENU_ENUM_LABEL_VALUE_INPUT_DRIVER,

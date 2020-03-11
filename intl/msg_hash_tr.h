@@ -1104,8 +1104,8 @@ MSG_HASH(
     "Aygıt Tipi"
     )
 MSG_HASH(
-    MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_INDEX,
-    "Fare İndeksi"
+    MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_KEYBOARD_INDEX,
+    "Fare İndeksi" /* TODO/FIXME: needs new translation of "Mouse/Keyboard Index" */
     )
 MSG_HASH(
     MENU_ENUM_LABEL_VALUE_INPUT_DRIVER,

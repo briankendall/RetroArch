@@ -1243,8 +1243,8 @@ MSG_HASH(
     "Type de périphérique"
     )
 MSG_HASH(
-    MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_INDEX,
-    "Numéro de la souris"
+    MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_KEYBOARD_INDEX,
+    "Numéro de la souris" /* TODO/FIXME: needs new translation of "Mouse/Keyboard Index" */
     )
 MSG_HASH(
     MENU_ENUM_LABEL_VALUE_INPUT_DRIVER,

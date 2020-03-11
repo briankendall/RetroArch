@@ -7202,7 +7202,7 @@ static bool setting_append_list_input_player_options(
                msg_hash_to_str(MENU_ENUM_LABEL_VALUE_INPUT_SAVE_AUTOCONFIG));
       snprintf(label_mouse_index[user], sizeof(label_mouse_index[user]),
                "%s",
-               msg_hash_to_str(MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_INDEX));
+               msg_hash_to_str(MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_KEYBOARD_INDEX));
 
       CONFIG_UINT_ALT(
             list, list_info,

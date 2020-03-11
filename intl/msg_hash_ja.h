@@ -1113,8 +1113,8 @@ MSG_HASH(
    "デバイスタイプ"
 )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_INDEX,
-   "マウスのインデックス"
+   MENU_ENUM_LABEL_VALUE_INPUT_MOUSE_KEYBOARD_INDEX,
+   "マウスのインデックス" /* TODO/FIXME: needs new translation of "Mouse/Keyboard Index" */
 )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_DRIVER,
