@@ -4768,9 +4768,9 @@ static int setting_action_left_mouse_index(rarch_setting_t *setting, bool wrapar
    if (!setting)
       return -1;
 
-   if (settings->uints.input_mouse_index[setting->index_offset])
+   if (settings->uints.input_mouse_keyboard_index[setting->index_offset])
    {
-      --settings->uints.input_mouse_index[setting->index_offset];
+      --settings->uints.input_mouse_keyboard_index[setting->index_offset];
       settings->modified = true;
    }
 
@@ -6251,7 +6251,7 @@ static int setting_action_right_mouse_index(rarch_setting_t *setting, bool wrapa
    if (!setting)
       return -1;
 
-   ++settings->uints.input_mouse_index[setting->index_offset];
+   ++settings->uints.input_mouse_keyboard_index[setting->index_offset];
    settings->modified = true;
 
    return 0;
@@ -7330,7 +7330,7 @@ static bool setting_append_list_input_player_options(
 
       CONFIG_UINT_ALT(
             list, list_info,
-            &settings->uints.input_mouse_index[user],
+            &settings->uints.input_mouse_keyboard_index[user],
             mouse_index[user],
             label_mouse_index[user],
             0,

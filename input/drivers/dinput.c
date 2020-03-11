@@ -268,7 +268,7 @@ static bool dinput_mouse_button_pressed(
 		return false;
 
 	/* the driver only supports one mouse */
-	if (settings->uints.input_mouse_index[port] != 0)
+	if (settings->uints.input_mouse_keyboard_index[port] != 0)
 		return false;
 
 	switch (key)
@@ -412,7 +412,7 @@ static int16_t dinput_mouse_state(struct dinput_input *di,
 		return false;
 
 	/* the driver only supports one mouse */
-	if (settings->uints.input_mouse_index[port] != 0)
+	if (settings->uints.input_mouse_keyboard_index[port] != 0)
 		return 0;
 
    switch (id)
@@ -465,7 +465,7 @@ static int16_t dinput_mouse_state_screen(struct dinput_input *di,
 		return false;
 
 	/* the driver only supports one mouse */
-	if (settings->uints.input_mouse_index[ port ] != 0)
+	if (settings->uints.input_mouse_keyboard_index[ port ] != 0)
 		return 0;
 
    switch (id)

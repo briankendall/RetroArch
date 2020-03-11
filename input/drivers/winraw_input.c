@@ -301,7 +301,7 @@ static int16_t winraw_lightgun_aiming_state(winraw_input_t *wr,
 
    for (i = 0; i < g_mouse_cnt; ++i)
    {
-      if (i == settings->uints.input_mouse_index[port])
+      if (i == settings->uints.input_mouse_keyboard_index[port])
       {
          mouse = &wr->mice[i];
          break;
@@ -351,7 +351,7 @@ static int16_t winraw_mouse_state(winraw_input_t *wr,
 
    for (i = 0; i < g_mouse_cnt; ++i)
    {
-      if (i == settings->uints.input_mouse_index[port])
+      if (i == settings->uints.input_mouse_keyboard_index[port])
       {
          mouse = &wr->mice[i];
          break;
@@ -398,7 +398,7 @@ static bool winraw_mouse_button_pressed(
 
 	for (i = 0; i < g_mouse_cnt; ++i)
 	{
-		if (i == settings->uints.input_mouse_index[port])
+		if (i == settings->uints.input_mouse_keyboard_index[port])
 		{
 			mouse = &wr->mice[i];
 			break;
@@ -444,7 +444,7 @@ static int16_t winraw_keyboard_state(winraw_input_t *wr,
 
    for (i = 0; i < g_keyboard_cnt; ++i)
    {
-      if (i == settings->uints.input_mouse_index[port])
+      if (i == settings->uints.input_mouse_keyboard_index[port])
       {
          keyboard = &wr->keyboards[i];
          break;
@@ -470,7 +470,7 @@ static bool keyboard_key_is_pressed(winraw_input_t *wr,
 
    for (i = 0; i < g_keyboard_cnt; ++i)
    {
-      if (i == settings->uints.input_mouse_index[port])
+      if (i == settings->uints.input_mouse_keyboard_index[port])
       {
          keyboard = &wr->keyboards[i];
          break;
@@ -553,7 +553,7 @@ static int16_t winraw_deprecated_lightgun_state(winraw_input_t *wr,
 
    for (i = 0; i < g_mouse_cnt; ++i)
    {
-      if (i == settings->uints.input_mouse_index[port])
+      if (i == settings->uints.input_mouse_keyboard_index[port])
       {
          mouse = &wr->mice[i];
          break;

@@ -87,7 +87,7 @@ static bool x_mouse_button_pressed(
       return false;
 
    /* the driver only supports one mouse */
-   if ( settings->uints.input_mouse_index[ port ] != 0 )
+   if ( settings->uints.input_mouse_keyboard_index[ port ] != 0 )
       return false;
 
    switch ( key )

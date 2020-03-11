@@ -231,7 +231,7 @@ static udev_input_mouse_t *udev_get_mouse(
       if (udev->devices[i]->type == UDEV_INPUT_KEYBOARD)
          continue;
 
-      if (mouse_index == settings->uints.input_mouse_index[port])
+      if (mouse_index == settings->uints.input_mouse_keyboard_index[port])
       {
          mouse = &udev->devices[i]->mouse;
          break;
